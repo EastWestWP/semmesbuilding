@@ -385,10 +385,13 @@
     </section> -->
 
     <!-- Contact Form -->
-    <section id="contact" class="contact-form">
+    <section id="contact" class="contact-form" netlify>
         <div class="container">
             <h3 class="subsection-title">For more information on this property, please use the form below:</h3>
-            <form class="contact-form-container" id="contactForm">
+            <form class="contact-form-container" id="contactForm" method="POST" data-netlify="true" netlify-honeypot="bot-field" >
+                <p hidden>
+                    <label>Don’t fill this out: <input name="bot-field" /></label>
+                </p>
                 <div class="form-row">
                     <div class="form-group">
                         <label for="name">Your Name *</label>
