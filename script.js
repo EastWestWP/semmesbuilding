@@ -570,5 +570,5 @@ function initDropdown() {
 }
 
 // Console welcome message
-console.log('%c275 Madison Ave Website', 'color: #1a365d; font-size: 24px; font-weight: bold;');
-console.log('%cBuilt with HTML, CSS, and JavaScript', 'color: #4a5568; font-size: 14px;');
+console.log('%cSemmes Building website', 'color: #1a365d; font-size: 24px; font-weight: bold;');
+console.log('%c10220 River Road, Potomac, MD 20854', 'color: #4a5568; font-size: 14px;');
