@@ -115,8 +115,9 @@ p {
 }
 
 .logo-text {
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-family: "Times New Roman", "Century Schoolbook", "Libre Baskerville", serif;
+    font-size: 2.5rem;
+    font-weight: 800;
     color: #4A90E2;
     letter-spacing: -0.5px;
 }
@@ -267,7 +268,7 @@ p {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3));
     display: flex;
     align-items: center;
     justify-content: center;
@@ -587,6 +588,12 @@ section {
     padding: 3rem;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
 }
 
 .contact-grid {
