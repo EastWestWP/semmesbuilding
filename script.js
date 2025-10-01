@@ -151,9 +151,18 @@ function initContactForm() {
             
             // Validate form
             if (validateForm(data)) {
-                // Show success message
-                showFormMessage('Thank you for your inquiry! We will contact you soon.', 'success');
-                form.reset();
+                fetch("/", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                    body: new URLSearchParams(formData).toString()
+                  })
+                    .then(() => {
+                         // Show success message
+                        showFormMessage('Thank you for your inquiry! We will contact you soon.', 'success');
+                        form.reset();
+                    })
+                    .catch(error => alert(error));              
+                
             }
         });
         
